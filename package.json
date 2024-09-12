@@ -1,0 +1,14 @@
+{
+  "name": "@nikita-naredi/string-utility",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "string"
+  ],
+  "author": "nikita-naredi",
+  "license": "ISC",
+  "description": ""
+}
