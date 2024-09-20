@@ -117,26 +117,78 @@ export function containsOnlyAlpha(str) {
   return /^[a-zA-Z]+$/.test(str);
 }
 
-// Mine:
-// findSubstringOccurrences
-// pascalCase
-// camelCase
-// Title Case
-// Sentence Case
-// Capitalized Case
-// Snake Case
-// Kebab Case
-// Pascal Case
-// Camel Case
-// Alternating Case
-// Reverse Case
-// Upper Snake Case
+/**
+ *
+ * @param {*} str
+ * @param {*} caseType
+ * @param {*} joinBy
+ * @returns
+ */
+export function caseString(str, caseType = null, joinBy = null) {
+  const caseHandlers = {
+    upper: () => modifiedStr.toUpperCase(),
+    lower: () => modifiedStr.toLowerCase(),
+    sentence: () => modifiedStr.toSentenceCase(),
+    capitalized: () => modifiedStr.toCapitalizedCase(),
+    reverse: () => modifiedStr.toReverseCase(),
+    alternate: () => modifiedStr.toAlternatingCase(),
+    camel: () => {
+      const [firstWord, ...otherWords] = modifiedStr;
+      return [
+        firstWord.toLowerCase(),
+        ...otherWords.map(
+          (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        ),
+      ];
+    },
+  };
 
+  let handler = null;
+  if (caseType) {
+    handler = caseHandlers[caseType];
+    if (!handler) {
+      return str; // Return original string if caseType is not recognized
+    }
+  }
+
+  const modifiedStr = handler();
+  return joinBy ? modifiedStr.join(joinBy) : modifiedStr;
+}
+
+export function replaceAllOccurrences(str, search, replace) {
+  return str.split(search).join(replace);
+}
+
+export function replaceSpecificOccurence(str, search, replace, index) {
+  let splittedStr = str.split(search);
+  return splittedStr.reduce((modifiedStr, element, eleIndex, array) => {
+    if (index === eleIndex) {
+      return modifiedStr + replace + element;
+    }
+    return modifiedStr + search + element;
+  });
+}
+
+export function findSubstringOccurrences(str, substr) {
+  let count = 0;
+  let index = str.indexOf(substr);
+  while (index !== -1) {
+    count++;
+    index = str.indexOf(substr, index + 1);
+  }
+  return count;
+}
+
+export function removeSubstring(str, substr) {
+  return str.split(substr).join("");
+}
+
+export function removeDuplicates(str) {
+  return Array.from(new Set(str)).join("");
+}
+
+// Mine:
 // generate random string of specified length
-// replaceAllOccurrences
-// findLastOccurrence
-// findfirstOccurrence
-// replaceSpecificOccurence
 // charAtFromEnd
 // Extract Substring Between Two Characters
 // is Palindrome
