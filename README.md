@@ -30,64 +30,54 @@ Or if you're using ES6 modules:
 import stringUtility from '@nikita-naredi/string-utility';
 ```
 
-## API
-
-### parseString(input)
-
-Parses the input string and returns the result.
-
-```sh
-const result = stringUtility.parseString('Hello, World!');
-console.log(result);
-```
-
-### otherFunction(params)
-
-Description of another function in the package.
-
-```sh
-const output = stringUtility.otherFunction(params);
-console.log(output);
-```
-
 ## API Reference
 
-| Function                  | Description                                                                             | Example                                                                        | Output                |
-| ------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------- |
-| toUpperSnakeCase          | Converts the input string to upper snake case.                                          | `stringUtility.toUpperSnakeCase('helloWorld');`                                | `'HELLO_WORLD'`       |
-| toReverseCase             | Reverses the case of each character in the input string.                                | `stringUtility.toReverseCase('Hello World');`                                  | `'hELLO wORLD'`       |
-| toAlternatingCase         | Converts the input string to alternating case.                                          | `stringUtility.toAlternatingCase('hello world');`                              | `'HeLlO wOrLd'`       |
-| toCamelCase               | Converts the input string to camel case.                                                | `stringUtility.toCamelCase('hello world');`                                    | `'helloWorld'`        |
-| toPascalCase              | Converts the input string to pascal case.                                               | `stringUtility.toPascalCase('hello world');`                                   | `'HelloWorld'`        |
-| toKebabCase               | Converts the input string to kebab case.                                                | `stringUtility.toKebabCase('hello world');`                                    | `'hello-world'`       |
-| toSnakeCase               | Converts the input string to snake case.                                                | `stringUtility.toSnakeCase('hello world');`                                    | `'hello_world'`       |
-| toCapitalizedCase         | Capitalizes the first letter of each word in the input string.                          | `stringUtility.toCapitalizedCase('hello world');`                              | `'Hello World'`       |
-| toSentenceCase            | Converts the input string to sentence case.                                             | `stringUtility.toSentenceCase('hello world');`                                 | `'Hello world'`       |
-| toTitleCase               | Converts the input string to title case.                                                | `stringUtility.toTitleCase('hello world');`                                    | `'Hello World'`       |
-| removeNonAlpha            | Removes all non-alphabetic characters from the input string.                            | `stringUtility.removeNonAlpha('Hello, World! 123');`                           | `'HelloWorld'`        |
-| containsOnlyAlpha         | Checks if the input string contains only alphabetic characters.                         | `stringUtility.containsOnlyAlpha('Hello');`                                    | `true`                |
-| removeDuplicates          | Removes duplicate characters from the input string.                                     | `stringUtility.removeDuplicates('Hello');`                                     | `'Helo'`              |
-| findSubstringOccurrences  | Counts the number of occurrences of a substring within the input string.                | `stringUtility.findSubstringOccurrences('Hello, World! 123', 'el');`           | `1`                   |
-| replaceSpecificOccurrence | Replaces the nth occurrence of a substring with a new substring in the input string.    | `stringUtility.replaceSpecificOccurrence('Hello, World! 123', 'l', 'i', '1');` | `'Helio, World! 123'` |
-| replaceAllOccurrences     | Replaces all occurrences of a substring with a new substring in the input string.       | `stringUtility.replaceAllOccurrences('Hello, World! 123', 'l', 'i');`          | `'Heiio, Worid! 123'` |
-| caseString                | Converts the input string to the specified case type (e.g., 'upper', 'lower', 'title'). | `stringUtility.caseString('Hello, World!', 'alternate');`                      | `'hELLo, wORLD'`      |
-|                           |
-
-## Examples
-
-Here are some examples of how to use the string-utility package:
-
-```sh
-const stringUtility = require('@nikita-naredi/string-utility');
-
-// Example 1
-const parsed = stringUtility.parseString('Example string');
-console.log(parsed);
-
-// Example 2
-const result = stringUtility.otherFunction('param1', 'param2');
-console.log(result);
-```
+| Function                  | Description                                                                             | Example                                                                          | Output                |
+| ------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------- |
+| toUpperSnakeCase          | Converts the input string to upper snake case.                                          | `stringUtility.toUpperSnakeCase('Hello World');`                                 | `'HELLO_WORLD'`       |
+| toReverseCase             | Reverses the case of each character in the input string.                                | `stringUtility.toReverseCase('Hello World');`                                    | `'hELLO wORLD'`       |
+| toAlternatingCase         | Converts the input string to alternating case.                                          | `stringUtility.toAlternatingCase('hello world');`                                | `'HeLlO wOrLd'`       |
+| toCamelCase               | Converts the input string to camel case.                                                | `stringUtility.toCamelCase('hello world');`                                      | `'helloWorld'`        |
+| toPascalCase              | Converts the input string to pascal case.                                               | `stringUtility.toPascalCase('hello world');`                                     | `'HelloWorld'`        |
+| toKebabCase               | Converts the input string to kebab case.                                                | `stringUtility.toKebabCase('hello world');`                                      | `'hello-world'`       |
+| toSnakeCase               | Converts the input string to snake case.                                                | `stringUtility.toSnakeCase('hello world');`                                      | `'hello_world'`       |
+| toCapitalizedCase         | Capitalizes the first letter of each word in the input string.                          | `stringUtility.toCapitalizedCase('hello world');`                                | `'Hello World'`       |
+| toSentenceCase            | Converts the input string to sentence case.                                             | `stringUtility.toSentenceCase('hello world');`                                   | `'Hello world'`       |
+| toTitleCase               | Converts the input string to title case.                                                | `stringUtility.toTitleCase('hello world');`                                      | `'Hello World'`       |
+| removeNonAlpha            | Removes all non-alphabetic characters from the input string.                            | `stringUtility.removeNonAlpha('Hello, World! 123');`                             | `'HelloWorld'`        |
+| containsOnlyAlpha         | Checks if the input string contains only alphabetic characters.                         | `stringUtility.containsOnlyAlpha('Hello');`                                      | `true`                |
+| removeDuplicates          | Removes duplicate characters from the input string.                                     | `stringUtility.removeDuplicates('Hello');`                                       | `'Helo'`              |
+| findSubstringOccurrences  | Counts the number of occurrences of a substring within the input string.                | `stringUtility.findSubstringOccurrences('Hello, World! 123', 'el');`             | `1`                   |
+| replaceSpecificOccurrence | Replaces the nth occurrence of a substring with a new substring in the input string.    | `stringUtility.replaceSpecificOccurrence('Hello, World! 123', 'l', 'i', '1');`   | `'Helio, World! 123'` |
+| replaceAllOccurrences     | Replaces all occurrences of a substring with a new substring in the input string.       | `stringUtility.replaceAllOccurrences('Hello, World! 123', 'l', 'i');`            | `'Heiio, Worid! 123'` |
+| caseString                | Converts the input string to the specified case type (e.g., 'upper', 'lower', 'title'). | `stringUtility.caseString('Hello, World!', 'alternate');`                        | `'hELLo, wORLD'`      |
+| countWords                | Counts the number of words in the input string.                                         | `stringUtility.countWords('Hello world');`                                       | `2`                   |
+| countCharacters           | Counts the total number of characters in the input string.                              | `stringUtility.countCharacters('Hello, World!');`                                | `13`                  |
+| countUniqueCharacters     | Counts the number of unique characters in the input string.                             | `stringUtility.countUniqueCharacters('Hello');`                                  | `4`                   |
+| countVowels               | Counts the number of vowels in the input string.                                        | `stringUtility.countVowels('Hello world');`                                      | `3`                   |
+| countConsonants           | Counts the number of consonants in the input string.                                    | `stringUtility.countConsonants('Hello world');`                                  | `7`                   |
+| countSpecialCharacters    | Counts the number of special characters in the input string.                            | `stringUtility.countSpecialCharacters('Hello, World!');`                         | `2`                   |
+| countDigits               | Counts the number of digits in the input string.                                        | `stringUtility.countDigits('Hello123World');`                                    | `3`                   |
+| countOccurrences          | Counts the number of occurrences of a specific substring in the input string.           | `stringUtility.countOccurrences('Hello world', 'o');`                            | `2`                   |
+| countSentences            | Counts the number of sentences in the input string.                                     | `stringUtility.countSentences('Hello world. How are you? I am fine.');`          | `3`                   |
+| countParagraphs           | Counts the number of paragraphs in the input string.                                    | `stringUtility.countParagraphs('Paragraph 1.\n\nParagraph 2.\n\nParagraph 3.');` | `3`                   |
+| countLines                | Counts the number of lines in the input string.                                         | `stringUtility.countLines('Line 1\nLine 2\nLine 3');`                            | `3`                   |
+| countUniqueWords          | Counts the number of unique words in the input string.                                  | `stringUtility.countUniqueWords('The quick brown fox jumps over the lazy dog');` | `8`                   |
+| countSubstrings           | Counts the number of occurrences of a substring in the input string.                    | `stringUtility.countSubstrings('hello hello world', 'hello');`                   | `2`                   |
+| generateRandomString      | Generates a random string of specified length and character set.                        | `stringUtility.generateRandomString(10, 'alphanumeric');`                        | `'a2b3c4d5e6'`        |
+| removeNonAlpha            | Removes all non-alphabetic characters from the input string.                            | `stringUtility.removeNonAlpha('Hello, World! 123');`                             | `'HelloWorld'`        |
+| removeSubstring           | Removes all occurrences of a specified substring from the input string.                 | `stringUtility.removeSubstring('Hello World', 'o');`                             | `'Hell Wrld'`         |
+| removeDuplicates          | Removes duplicate characters from the input string, keeping only the first occurrence.  | `stringUtility.removeDuplicates('hello');`                                       | `'helo'`              |
+| replaceFirstOccurrence    | Replaces the first occurrence of a substring with a new string.                         | `stringUtility.replaceFirstOccurrence('Hello World', 'o', '0');`                 | `'Hell0 World'`       |
+| replaceLastOccurrence     | Replaces the last occurrence of a substring with a new string.                          | `stringUtility.replaceLastOccurrence('Hello World', 'o', '0');`                  | `'Hello W0rld'`       |
+| isAlpha                   | Checks if the input string contains only alphabetic characters.                         | `stringUtility.isAlpha('HelloWorld');`                                           | `true`                |
+|                           |                                                                                         | `stringUtility.isAlpha('Hello123');`                                             | `false`               |
+| isPalindrome              | Checks if the input string is a palindrome (reads the same forwards and backwards).     | `stringUtility.isPalindrome('racecar');`                                         | `true`                |
+|                           |                                                                                         | `stringUtility.isPalindrome('hello');`                                           | `false`               |
+| isAnagram                 | Checks if two input strings are anagrams of each other.                                 | `stringUtility.isAnagram('listen', 'silent');`                                   | `true`                |
+|                           |                                                                                         | `stringUtility.isAnagram('hello', 'world');`                                     | `false`               |
+| isPangram                 | Checks if the input string is a pangram (contains all letters of the alphabet).         | `stringUtility.isPangram('The quick brown fox jumps over the lazy dog');`        | `true`                |
+|                           |                                                                                         | `stringUtility.isPangram('Hello world');`                                        | `false`               |
 
 ## Contributing
 
