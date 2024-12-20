@@ -63,7 +63,7 @@ function countSubstrings(str, substring) {
   return str.split(substring).length - 1;
 }
 
-module.export = {
+export default {
   countWords,
   countCharacters,
   countVowels,

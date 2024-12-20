@@ -20,5 +20,6 @@
   ],
   "author": "nikita-naredi",
   "license": "MIT",
-  "description": "This is a string utility package"
+  "description": "This is a string utility package",
+  "type": "module"
 }

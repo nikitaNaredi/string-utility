@@ -146,7 +146,7 @@ function caseString(str, caseType = null, joinBy = null) {
   return joinBy ? modifiedStr.join(joinBy) : modifiedStr;
 }
 
-module.exports = {
+export default {
   toUpperSnakeCase,
   toReverseCase,
   toAlternatingCase,

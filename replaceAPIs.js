@@ -20,7 +20,7 @@ function replaceLastOccurence(str, search, replace) {
   return replaceSpecificOccurence(str, search, replace, -1);
 }
 
-module.export = {
+export default {
   replaceAllOccurrences,
   replaceSpecificOccurence,
   replaceFirstOccurence,

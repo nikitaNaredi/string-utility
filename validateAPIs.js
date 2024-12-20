@@ -37,7 +37,7 @@ function isPangram(str) {
 console.log(isPangram("The quick brown fox jumps over the lazy dog")); // true
 console.log(isPangram("Hello, World!")); // false
 
-module.exports = {
+export default {
   isAlpha,
   isPalindrome,
   isAnagram,

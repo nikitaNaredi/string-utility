@@ -11,7 +11,7 @@ function removeDuplicates(str) {
   return Array.from(new Set(str)).join("");
 }
 
-module.exports = {
+export default {
   removeNonAlpha,
   removeSubstring,
   removeDuplicates,

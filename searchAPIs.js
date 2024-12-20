@@ -8,6 +8,6 @@ function findSubstringOccurrences(str, substr) {
   return count;
 }
 
-module.exports = {
+export default {
   findSubstringOccurrences,
 };

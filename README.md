@@ -78,6 +78,12 @@ import stringUtility from '@nikita-naredi/string-utility';
 |                           |                                                                                         | `stringUtility.isAnagram('hello', 'world');`                                     | `false`               |
 | isPangram                 | Checks if the input string is a pangram (contains all letters of the alphabet).         | `stringUtility.isPangram('The quick brown fox jumps over the lazy dog');`        | `true`                |
 |                           |                                                                                         | `stringUtility.isPangram('Hello world');`                                        | `false`               |
+| slugify                   | Converts a string into a URL-friendly slug by removing special characters and spaces.   | `stringUtility.slugify('Hello World! 123');`                                     | `'hello-world-123'`   |
+| truncate                  | Truncates a string to a specified length and adds an optional suffix.                   | `stringUtility.truncate('Hello World', 5, '...');`                               | `'Hello...'`          |
+| padString                 | Pads a string with a specified character to reach a target length.                      | `stringUtility.padString('Hello', 8, '*', 'right');`                             | `'Hello***'`          |
+|                           |                                                                                         | `stringUtility.padString('Hello', 8, '*', 'left');`                              | `'***Hello'`          |
+| decodeBase64              | Decodes a Base64 encoded string back to its original form.                              | `stringUtility.decodeBase64('SGVsbG8gV29ybGQ=');`                                | `'Hello World'`       |
+| encodeBase64              | Encodes a string to Base64 format.                                                      | `stringUtility.encodeBase64('Hello World');`                                     | `'SGVsbG8gV29ybGQ='`  |
 
 ## Contributing
 
