@@ -7,8 +7,8 @@ function isPalindrome(str) {
   const reversedStr = cleanedStr.split("").reverse().join("");
   return cleanedStr === reversedStr;
 }
-console.log(isPalindrome("A man, a plan, a canal, Panama!")); // true
-console.log(isPalindrome("Hello, World!")); // false
+// console.log(isPalindrome("A man, a plan, a canal, Panama!")); // true
+// console.log(isPalindrome("Hello, World!")); // false
 
 function isAnagram(str1, str2) {
   const cleanStr1 = str1.replace(/[^a-zA-Z]/g, "").toLowerCase();
@@ -18,9 +18,9 @@ function isAnagram(str1, str2) {
   );
 }
 // Example usage:
-console.log(isAnagram("listen", "silent")); // true
-console.log(isAnagram("Triangle", "Integral")); // true
-console.log(isAnagram("apple", "pale")); // false
+// console.log(isAnagram("listen", "silent")); // true
+// console.log(isAnagram("Triangle", "Integral")); // true
+// console.log(isAnagram("apple", "pale")); // false
 
 function isPangram(str) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -34,8 +34,8 @@ function isPangram(str) {
 }
 
 // Example usage:
-console.log(isPangram("The quick brown fox jumps over the lazy dog")); // true
-console.log(isPangram("Hello, World!")); // false
+// console.log(isPangram("The quick brown fox jumps over the lazy dog")); // true
+// console.log(isPangram("Hello, World!")); // false
 
 export default {
   isAlpha,

@@ -9,13 +9,13 @@ function slugify(str) {
 }
 
 // Test cases
-console.log(slugify("Hello World"));
+// console.log(slugify("Hello World"));
 // Output: "hello-world"
 
-console.log(slugify("This is a LONG title!"));
+// console.log(slugify("This is a LONG title!"));
 // Output: "this-is-a-long-title"
 
-console.log(slugify("Hello@#$%^&* World!!!"));
+// console.log(slugify("Hello@#$%^&* World!!!"));
 // Output: "hello-world"
 
 // Pad string to specified length
@@ -28,9 +28,9 @@ function padString(str, length, char = " ", position = "right") {
 }
 
 // Examples:
-console.log(padString("hello", 10)); // "hello     "
-console.log(padString("hello", 10, "-")); // "hello-----"
-console.log(padString("hello", 8, "*")); // "hello***"
+// console.log(padString("hello", 10)); // "hello     "
+// console.log(padString("hello", 10, "-")); // "hello-----"
+// console.log(padString("hello", 8, "*")); // "hello***"
 
 // Truncate string to specified length with ellipsis
 function truncate(str, length) {
@@ -38,8 +38,8 @@ function truncate(str, length) {
 }
 
 // Examples:
-console.log(truncate("Hello World", 5)); // "Hello..."
-console.log(truncate("Test", 10)); // "Test"
-console.log(truncate("This is a very long string", 10)); // "This is a ..."
+// console.log(truncate("Hello World", 5)); // "Hello..."
+// console.log(truncate("Test", 10)); // "Test"
+// console.log(truncate("This is a very long string", 10)); // "This is a ..."
 
 export default { slugify, padString, truncate };
