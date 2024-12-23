@@ -1,0 +1,12 @@
+# source files
+src
+
+# config files
+webpack.config.js
+
+# Version control
+.git
+.gitignore
+
+# Misc
+node_modules/

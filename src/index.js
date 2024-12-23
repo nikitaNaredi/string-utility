@@ -35,7 +35,7 @@ const {
   toUpperSnakeCase,
 } = caseAPIs;
 
-export default {
+export {
   caseString,
   countCharacters,
   countConsonants,
@@ -49,16 +49,15 @@ export default {
   isAnagram,
   isPalindrome,
   isPangram,
+  padString,
   removeDuplicates,
   removeNonAlpha,
-  slugify,
-  padString,
-  truncate,
   removeSubstring,
   replaceAllOccurrences,
   replaceFirstOccurence,
   replaceLastOccurence,
   replaceSpecificOccurence,
+  slugify,
   toAlternatingCase,
   toCamelCase,
   toCapitalizedCase,
@@ -69,6 +68,5 @@ export default {
   toSnakeCase,
   toTitleCase,
   toUpperSnakeCase,
-  decodeBase64,
-  encodeBase64,
+  truncate,
 };
