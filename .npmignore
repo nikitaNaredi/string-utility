@@ -10,3 +10,4 @@ webpack.config.js
 
 # Misc
 node_modules/
+*.tgz
