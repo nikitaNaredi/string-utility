@@ -1,11 +1,12 @@
 {
   "name": "@nikita-naredi/string-utility",
-  "version": "1.1.1",
-  "main": "dist/main.js",
+  "version": "1.1.2",
+  "main": "dist/main.cjs",
+  "module": "dist/main.js",
   "exports": {
     ".": {
       "import": "./dist/main.js",
-      "require": "./dist/main.js"
+      "require": "./dist/main.cjs"
     }
   },
   "scripts": {
